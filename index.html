@@ -1,93 +1,76 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Thư Tỏ Tình</title>
-  <style>
-    body {
-      background: #ffeef2;
-      font-family: 'Segoe UI', sans-serif;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-    }
-    .letter {
-      background: white;
-      padding: 30px;
-      border-radius: 20px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-      max-width: 500px;
-      text-align: center;
-      display: none;
-      animation: fadeIn 1s ease-in-out forwards;
-    }
-    .heart {
-      font-size: 40px;
-      color: red;
-      animation: pulse 1.5s infinite;
-    }
-    @keyframes pulse {
-      0%, 100% {
-        transform: scale(1);
-      }
-      50% {
-        transform: scale(1.2);
-      }
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    h1 {
-      color: #e91e63;
-    }
-    p {
-      color: #333;
-      font-size: 18px;
-      line-height: 1.6;
-    }
-    button {
-      padding: 12px 24px;
-      background: #e91e63;
-      border: none;
-      color: white;
-      border-radius: 10px;
-      font-size: 16px;
-      cursor: pointer;
-      transition: background 0.3s ease;
-      margin-bottom: 20px;
-    }
-    button:hover {
-      background: #d81b60;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hosting Landing Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        .banner {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .banner .title {
+            font-size: 24px;
+        }
+        .highlight {
+            color: blue;
+            font-weight: bold;
+        }
+        .buttons button {
+            background: black;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            margin: 5px;
+            cursor: pointer;
+        }
+        .content-box {
+            display: flex;
+            border: 1px solid #ccc;
+            padding: 20px;
+            text-align: left;
+        }
+        .image-placeholder {
+            background: #ccc;
+            width: 200px;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+        }
+        .details button {
+            padding: 5px 10px;
+        }
+    </style>
 </head>
 <body>
-  <button onclick="showLetter()">💌 Nhấn vào đây </button>
-
-  <div class="letter" id="loveLetter">
-    <div class="heart">❤️</div>
-    <h1>Gửi [Tên người ấy],</h1>
-    <p>
-      Tớ đã suy nghĩ rất nhiều trước khi viết những dòng này.<br />
-      Tớ thích cậu – không chỉ vì nụ cười, ánh mắt hay cách cậu nói chuyện,<br />
-      mà vì chính con người cậu.<br /><br />
-      Mỗi lần được ở gần cậu, tớ thấy tim mình đập nhanh hơn, thấy cuộc sống có gì đó thật đặc biệt.<br /><br />
-      Tớ không mong cậu phải đáp lại ngay.<br />
-      Tớ chỉ muốn cậu biết rằng: ở đâu đó, có một người đang thật lòng thích cậu.<br /><br />
-      Nếu cậu cũng có chút cảm giác như tớ, thì mình thử bước cùng nhau một đoạn, được không?
-    </p>
-    <div class="heart">❤️</div>
-  </div>
-
-  <script>
-    function showLetter() {
-      document.getElementById("loveLetter").style.display = "block";
-    }
-  </script>
+    <div class="banner">
+        <div style="background:#ccc; padding: 10px; width: 190px; margin: auto;">190 x 50</div>
+        <h2 class="title">Best <span class="highlight">Shared Hosting</span> Company</h2>
+        <p>With this responsive landing page template, you can promote your all hosting, domain and email services.</p>
+        <div class="buttons">
+            <button>View Plans</button>
+            <button>All Features</button>
+        </div>
+    </div>
+    
+    <div class="content-box">
+        <div class="image-placeholder">Học Web Chuẩn</div>
+        <div class="details">
+            <h3>VESTIBULUM ULLAMCORPER UT LEO QUIS</h3>
+            <p>Aenean facilisis lectus ante, ut rutrum enim convallis et.</p>
+            <p>Vestibulum ullamcorper ut leo quis tristique. Donec in erat commodo, pharetra purus ac, consectetur lectus.</p>
+            <p>Fusce aliquam magna id quam ultricies interdum. Maecenas nibh risus.</p>
+            <button>DETAIL</button>
+        </div>
+    </div>
 </body>
 </html>
